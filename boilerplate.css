@@ -1,0 +1,325 @@
+/*
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/*  HTML5 display definitions */
+/* ================================ Base ================================== */
+/*----------------------------Personalized ---------------------------------*/
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	overflow-y: scroll;
+	width: auto;
+}
+ *::-moz-selection { 
+ background: #000000; 
+ color: #fff; 
+ text-shadow: none; 
+}
+html, body, div, aside, footer {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+vertical-align:baseline;
+background:transparent;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Segoe, "Segoe UI", Verdana, sans-serif;
+	padding-bottom: 8px;
+	font-size: 100%;
+	*font-size:small; 
+	*font:x-small;
+	font-weight: 450;
+	color: #000000;
+	line-height: 1.3; 
+} 
+
+/* ====================== Links, editable =========================== */
+
+a { 
+margin:0;
+padding:0; 
+vertical-align:baseline; 
+background:transparent; 
+}
+a,a:hover,a:focus, a:active {
+	text-decoration: none;
+	outline: 0;
+}
+a:link {
+	color: #453E3E;
+}
+a:visited {
+	color: #A21E06;
+}
+a:hover {
+	color: #F57506;
+}
+
+/* ======================== Typography, Editable ======================= */
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Segoe, "Segoe UI", Verdana, sans-serif;
+	font-weight: 400;
+}
+h1 {
+	font-size: 180%;
+	color: #C82601;
+	padding-left: 0.0em;
+	border-bottom: 1px solid #1D1C1C;
+}
+h2 {
+	padding-top: 0.0em;
+	font-size: 150%;
+	color: #C82601;
+	border-bottom: 1px solid #1D1C1C;
+}
+h3 {
+	font-size: 130%;
+	margin-top: 0.0em;
+	margin-bottom: 0.0em;
+    color: #B8860B;
+	border-bottom: none;
+}
+p {
+	margin-top: 0.0em;
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.3;
+	font-size: 105%;
+	text-align: justify;
+	text-justify: inter-word;
+}
+p.abstrct {
+	text-align: justify;
+	width: 100%;
+	font-weight: normal;
+	color:#7B0C0E;
+}
+/* leave them as it is (preferable)*/
+h4,h5,h6, blockquote, pre,em,q,small, strong, var,
+b, i { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+blockquote, q { quotes:none; } 
+blockquote:before, blockquote:after,q:before, q:after { content:''; content:none; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+/* Improve readability of pre-formatted text in all browsers */
+pre { padding: 15px; white-space: pre; /* CSS2 */ white-space: pre-wrap; /* CSS 2.1 */ white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */ word-wrap: break-word; /* IE */
+}
+small { font-size: 85%; }
+/* Position subscript and superscript content without affecting line-height*/
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* ===================== Lists, editable ================================= */
+
+/*ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }*/
+dl, dt, dd, ol, ul, li {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+ul, ol, dl {
+	margin-top: 0.2em;
+	padding-top: 0;
+	margin-bottom: 0.8em;
+}
+ul {
+	list-style-position: outside;
+	list-style-type: square;
+	padding-left: 3.0em;
+}
+
+p + ul, p + ol {
+	margin-top: -0.5em;
+}
+
+li ul, li ol {
+	margin-top: -0.3em;
+}
+
+ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+	padding-left: 3.0em;
+}
+
+li p, dd p {
+	margin-bottom: 0.3em;
+
+}
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ol ol ol {
+	list-style-type: lower-roman;
+}
+
+/* ====================== Aside/Sidebar nav menu style ========== */
+
+ul#nav {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+ul#nav li {
+	display: block;
+	float: none;
+	clear: both;
+	background: #100702;
+	border-top: 1px solid #0D0C0C;
+	border-bottom: 1px solid #121212;
+    -webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-o-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+ul#nav li a {
+	color: #ccc;
+	font-size: 105%;
+}
+ul#nav li:hover,ul#nav li:focus {
+	background: #f07227;
+	width: auto;
+}
+ul#nav li:hover a,ul#nav li:focus a {
+	color: #000000;
+}
+ul#nav .currentmenu {
+	font-weight: bold;
+}
+ul#nav li.currentmenu a {
+	color: #ccc;
+}
+ul#nav li.currentmenu {
+	background: #00000;
+	border-top: 1px solid #363232;
+	border-bottom: 1px solid #121111;
+}
+ul#nav li .text {
+	padding-left: 30%;
+	line-height: 45px;
+	-webkit-box-shadow: -3px 0 5px -4px #000;
+	box-shadow: -3px 0 5px -4px #000;
+}
+
+/* ==================== Figures, editable ================================== */
+figure figcaption {
+	border: 1px dotted green;
+	text-align: center;
+}
+figure { margin: 0; }
+
+/* end of personalized section */
+
+/* ================== Embedded content, do not edit============================ */
+
+object,img,fieldset,caption,figure,audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent; /* this section is editable*/
+}
+/* Remove the gap between images and borders on image containers*/
+img {
+	 border: 0; 
+     -ms-interpolation-mode: bicubic; 
+     vertical-align: middle; 
+}
+/* Correct overflow not hidden in IE9*/
+svg:not(:root) { overflow: hidden; }
+[hidden] { display: none; }
+
+/* leave them as it is */
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+/*Re-set default cursor for disabled elements*/
+button[disabled], input[disabled] { cursor: default; }
+/*Consistent box sizing and appearance*/
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+input, select { vertical-align:middle; }
+select, input, textarea { font:99% sans-serif; }
+/* align checkboxes, radios, text inputs with their label */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+/*1. Remove default vertical scrollbar in IE6/7/8/9 2. Allow only vertical resizing */
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+/* =================== Chrome Frame Prompt, do not edit============================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* ==|== non-semantic helper classes, do not edit ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* ==|== print styles, do not edit=======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
