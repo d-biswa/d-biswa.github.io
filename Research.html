@@ -1,0 +1,398 @@
+<!doctype html>
+<html class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research@Biswa</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="commonstyle.css" rel="stylesheet" type="text/css">
+<script src="respond.min.js"></script>
+<script type="text/javascript">
+function toggleMe(a){
+var e=document.getElementById(a);
+var i = document.getElementById(a + '_image');
+if(!e)return true;
+if(e.style.display=="none"){
+e.style.display="block"
+i.src = 'http://laimages.s3.amazonaws.com/data/imagemanager/382/Arrow-Down-GreenShade30.png';
+} else {
+e.style.display="none"
+i.src = 'http://laimages.s3.amazonaws.com/data/imagemanager/382/Arrow-Right-GreenShade30.png';
+}
+return false;
+}
+</script>
+</head>
+
+<body>
+	<div class="gridContainer clearfix">
+        <aside id="sidebar" class="fluid">
+               <div id="photo" class="fluid clearfix">
+                   <img src="WebPage_1.png" alt=""/>
+               </div>
+               
+               <div id="name" class="fluid clearfix">
+                    <h2></h2>
+               </div>
+
+               <div id="menu" class="fluid">
+                   <ul id="nav">
+                    <li><a href="index.html"><div class="text">Home</div></a></li> 
+                    <li><a href="Research.html"><div class="text">Research</div></a></li> 
+                    <li><a href="Publications.html"><div class="text">Publications</div></a></li>
+                    <li><a href="Presentations.html"><div class="text">Presentations</div></a></li>
+                    <li><a href="Experience.html"><div class="text">Experience</div></a></li>
+                    <li><a href="Resume.pdf" target="_blank"><div class="text">C.V.</div></a></li>  
+                    <li><a href="Fall_2017_MAE544.html"><div class="text">Course: <b><font color="white">MAE 544</font></b></div></a></li>
+                  </ul>
+               </div>      
+        </aside>
+        <div id="maincontent" class="fluid">
+           <div id="subcontents" class="fluid">
+             <img src="wordcloud_9.png" width="100%" align="center" /> 
+
+
+
+
+
+
+
+
+
+<h2>
+<a style="cursor:pointer;" onclick="return toggleMe('paraR1')">
+Decentralized Control for Collective Robotics
+</a>
+</h2>
+<div id="paraR1" style="display:none;">
+
+<p>
+Studies on the group behavior of European starling flocks have revealed that the individuals in a group tend to fly parallel to one another in a very cohesive manner. Building on the insights gained from these studies, we proposed <i>topological velocity alignment</i>, a decentralized control algorithm designed to drive a group of individuals in the same direction through local interaction between neighbors. We designed the feedback control law in such a way that it does not require the individual speeds to be equal, and hence one can apply this control algorithm to drive a group of heterogeneous robots (for example, a fleet of autonomous boats, or a group of unmanned aerial vehicles) from one place to another. Moreover, this proposed control algorithm has wave equation like aspects which enable the group to maneuver in a fast and more efficient way. 
+</p>
+
+<div>
+    <table width="100%">
+        <td valign="top" align="center" width="50%">
+        <div id="myPLayer_First"></div>
+        <script async src="https://www.youtube.com/iframe_api"></script>
+        <script>
+         function onYouTubeIframeAPIReady() {
+          var player;
+          player = new YT.Player('myPLayer_First', {
+            videoId: 'YE0JeULqHdg', // YouTube Video ID
+            width: 470,               // Player width (in px)
+            height: 303,              // Player height (in px)
+            playerVars: {
+              autoplay: 1,        // Auto-play the video on load
+              controls: 1,        // Show pause/play buttons in player
+              showinfo: 0,        // Hide the video title
+              modestbranding: 1,  // Hide the Youtube Logo
+              loop: 1,            // Run the video in a loop
+              fs: 0,              // Hide the full screen button
+              cc_load_policy: 0, // Hide closed captions
+              iv_load_policy: 3,  // Hide the Video Annotations
+              autohide: 0         // Hide video controls when playing
+            },
+            events: {
+              onReady: function(e) {
+                e.target.mute();
+              }
+            }
+          });
+         }
+        </script>
+        </td>
+        <td valign="top" align="center" width="50%">
+        <iframe width="470" height="303" src="https://www.youtube.com/embed/cJT8G6btbvc" frameborder="0" allowfullscreen></iframe>
+        <!--<iframe width="470" height="303" src="http://www.youtube.com/embed/BCxUbQhIV1g?rel=0&loop=1&&playlist=&autoplay=1" frameborder="0" allowfullscreen></iframe>-->
+        </td>
+    </table>
+</div>
+
+<p>
+Another related line of my research (in collaboration with <a href="https://www.usna.edu/Users/ee/galloway/index.php" target="_blank">Dr. Kevin Galloway</a>) studies a modified version of a constant bearing pursuit strategy under a cyclic attention graph, wherein each agent pays attention to the next agent and a beacon (which can be a high value target in an surveillance-reconnaissance mission, or the eye of a hurricane during atmospheric measurements). In this modified framework, one can obtain a wide variety of motion patterns by appropriate choice of only a handful of control parameters. Our research has shown that this system admits shape equilibria with collective circling of the agents around the beacon, and the circling radius and distribution of the agents on the circle can be determined by tuning parameters in the feedback law. In a more recent work along this line, we have shown the existence of a family of invariant manifolds related to spiral motions which maintain the formation shape up to geometric similarity. This formulation provides a method to design a wide variety of motion paths in a collective of autonomous robots, with emergence built upon simple dyadic interactions between neighboring agents in a cycle graph.
+</p>
+
+<p>
+Many practical problems demand intelligent control algorithms to drive a group of autonomous robots towards some region of interest, and upon arrival switch to a suitable pattern for collaborative task execution, for example, search and rescue, surveillance, precision agriculture. Our results for synthesizing collective motion have direct relevance and potential applications in these situations, and may also provide some insight into modeling <i>explore-exploit</i> trade-offs observed in the foraging behavior of animal collectives.
+</p>
+
+<u>Related Publications</u>:<br />
+<ul>
+<li><p> 
+U. Halder, B. Dey, <i><font color="blue">Biomimetic algorithms for coordinated motion: Theory and implementation</font></i>, ICRA 2015.
+</p></li>
+<li><p> 
+K. S. Galloway, B. Dey, <i><font color="blue">Station keeping through beacon-referenced cyclic pursuit</font></i>, ACC 2015. 
+</p></li>
+<li><p> 
+K. S. Galloway, B. Dey, <i><font color="blue">Stability and pure shape equilibria for beacon-referenced cyclic pursuit</font></i>, ACC 2016.
+</p></li>
+<li><p> 
+K. S. Galloway, B. Dey, <i><font color="blue">Constant bearing pursuit on branching graphs</font></i>, CDC 2017. 
+</p></li>
+<li><p> 
+K. S. Galloway, B. Dey, <i><font color="blue">Collective motion under beacon-referenced cyclic pursuit</font></i>, Accepted for <i>Automatica</i>. 
+</p></li>
+<li><p> 
+K. S. Galloway, B. Dey, <i><font color="blue">Beacon-referenced Mutual Pursuit in Three Dimensions</font></i>, Accepted for <i>ACC 2018</i>. 
+</p></li>
+</ul>
+
+</div>
+
+
+
+
+
+<h2>
+<a style="cursor:pointer;" onclick="return toggleMe('paraR3')">
+Synchronization in Oscillator Networks
+</a>
+</h2>
+<div id="paraR3" style="display:none;">
+
+<p>
+Investigation of synchronization phenomena in networks of coupled nonlinear oscillators plays a pivotal role in understanding the behavior of biological and mechanical systems with oscillatory properties, power system networks, and diverse other problems. In biological neuronal networks, synchronization can be beneficial, allowing for production of complex behavior, or detrimental, causing disorders such as Parkinson's disease and epilepsy. A principled understanding of synchronization and related behavior in complex interconnected oscillatory systems is a necessary first step towards designing control for enhancement of desired dynamics and suppression of undesired dynamics.
+</p>
+
+<div>
+    <table>
+        <td valign="top" align="justify" width="100%">
+        <img src="10_node_SyncTraj.png" width="450" align="left">
+        <p>
+        By adopting an agent-based approach, we investigated synchronous firing patterns in networks of FitzHugh-Nagumo (FN) oscillators coupled through gap junctions. Our initial results, based on nonsmooth Lyapunov analysis, provide a sufficient condition for synchronization in an all-to-all network of homogeneous oscillators. Then, by extending these results to arbitrary undirected graphs, we derived a sufficient condition in terms of the second smallest eigenvalue of the coupling matrix, and investigated cluster synchronization under non-identical external inputs. Our next focus is to develop a formalism to reduce a network of FN oscillators, while maintaining the salient properties of the original system.
+        </p>
+    </td>
+    </table>
+</div>
+
+<u>Related Publications</u>:<br />
+<ul>
+<li><p>
+E. N. Davison, B. Dey, N. E. Leonard, <i><font color="blue">Synchronization bound for networks of nonlinear oscillators</font></i>, Allerton 2016. 
+</p></li>
+<li><p>
+Z. Aminzare, B. Dey, E. N. Davison, N. E. Leonard, <i><font color="blue">Cluster synchronization of diffusively-coupled nonlinear systems: A contraction based approach</font></i>, Under Review (Journal of Nonlinear Science). 
+</p></li>
+<li><p>
+E. N. Davison, Z. Aminzare, B. Dey, N. E. Leonard, <i><font color="blue">Mixed mode oscillations and firing onset in coupled systems of FitzHugh-Nagumo type</font></i>, Under Preparation. 
+</p></li>
+</ul>
+
+</div>
+
+
+
+
+
+
+<h2>
+<a style="cursor:pointer;" onclick="return toggleMe('paraR6')">
+Human Inspired Design of Neural Network Architectures
+</a>
+</h2>
+<div id="paraR6" style="display:none;">
+
+<div>
+    <table>
+        <td valign="top" align="justify" width="100%">
+        <img src="50_MT_Minm_nCh_PP.png" width="350" align="right">
+        In collaboration with Princeton Neuroscience Institute and Intel Corporation, I am investigating the effects of network topology on the parallel processing capability of neural network architectures. A key feature of neural network architectures is their ability to support the simultaneous interaction among large numbers of processes in the learning and processing of representations. The question of how the richness of such interactions trades off against the ability of a network to simultaneously carry out multiple <i>independent</i> processes - a salient limitation in many domains of human cognition - remains largely unexplored. Based on the assumption that multitasking constraints arise from shared representations between individual tasks, we introduced a graph-theoretic approach to address this question. Our analytical findings validate previous numerical work, showing that even modest amounts of interaction among processes induce dramatic constraints on the parallel processing capability of a network architecture. In addition to providing useful tools for empirical studies of controlled vs. automatic processing and multitasking performance in humans, the analytical methods developed in this work are also being exploited to study and design neural networks, which can strike a balance between representational efficiency and parallel processing capability.
+        </td>
+    </table>
+</div>
+
+<u>Related Publications</u>:<br />
+<ul>
+<li><p> 
+S. Musslick, B. Dey, K. &Oumlzcimder, M. M. A. Patwary, T. L. Willke, J. D. Cohen, <i><font color="blue">Controlled vs. Automatic Processing: A Graph-theoretic approach to the analysis of serial vs. parallel processing in neural network architectures</font></i>, 
+CogSci 2016. 
+</p></li>
+<li><p> 
+K. &Oumlzcimder, B. Dey, S. Musslick, G. Petri, N. K. Ahmed, T. L. Willke, J. D. Cohen, <i><font color="blue">A formal approach to modeling the cost of cognitive control</font></i>, 
+CogSci 2017. 
+</p></li>
+<li><p> 
+S. Musslick, A. M. Saxe, K. &Oumlzcimder, B. Dey, G. Henselman, J. D. Cohen, <i><font color="blue">Multitasking capability versus learning efficiency in neural network architectures</font></i>, 
+CogSci 2017. 
+</p></li>
+<li><p> 
+N. Alon, J. D. Cohen, B. Dey, T. Griffiths, S. Musslick, K. &Oumlzcimder, D. Reichmann, I. Shinkar, T. Wagner, <i><font color="blue">A Graph-Theoretic Approach to Multitasking</font></i>, 
+NIPS 2017 (Oral Presentation). 
+</p></li>
+<li><p> 
+G. Petri, S. Musslick, B. Dey, K. &Oumlzcimder, N. K. Ahmed, T. L. Willke, J. D. Cohen, <i><font color="blue">Universal limits to parallel processing capacity of neural systems</font></i>, 
+Under Preparation. 
+</p></li>
+<li><p> 
+S. Musslick, B. Dey, K. &Oumlzcimder, N. K. Ahmed, T. L. Willke, J. D. Cohen, <i><font color="blue">A formal theory of cognitive control and automaticity: Learning, representation and multitasking in neural networks</font></i>, 
+Under Preparation. 
+</p></li>
+<li><p> 
+K. &Oumlzcimder, B. Dey, S. Musslick, Z. Aminzare, T. L. Willke, J. D. Cohen, <i><font color="blue">A Formal approach to the requirements for cognitive control in network architectures</font></i>, 
+Under Preparation. 
+</p></li>
+</ul>
+
+</div>
+
+
+
+
+
+
+<h2>
+<a style="cursor:pointer;" onclick="return toggleMe('paraR2')">
+Analysis of Collective Behavior in Biological Settings
+</a>
+</h2>
+<div id="paraR2" style="display:none;">
+
+<p>
+Numerous examples of collective behavior evidenced in biological settings suggest that the related interaction mechanisms can actually serve as the repertoire for designing collaborations of autonomous agents, and that necessitates investigation of the underlying flight strategies and feedback control laws behind collective motions observed in nature.
+</p>
+
+<p>
+Equipped with appropriate algorithms for data smoothing and trajectory reconstruction, we performed flight data analysis of big brown bats (<i>Eptesicus fuscus</i>) in two different contexts (in collaboration with <a href="http://www.bsos.umd.edu/psyc/batlab/index.html" target="_blank">Batlab</a> at UMD). This analysis has shown quantitative evidence in favor of a context-specific switch in flight strategy. According to our findings bats apply constant absolute target direction (CATD), also known as motion camouflage (MC) in the context of visual insects, while chasing a free flying insect (praying mantis in our study). But if the scenario is modified into a competitive setting with another bat foraging for a single stationary food source (meal-worm in this study), the flight data show evidence that the trailing bat resort to classical pursuit (CP) to follow the other bat. Moreover, by comparing empirically observed curvature values with the ones obtained from theoretically plausible feedback laws, this study sheds light upon the steering control mechanisms. Our analysis also yields an estimate for the sensorimotor delay associated with the foraging behavior. This approach towards uncovering the governing mechanism (of pursuit, collective motion) can easily be used to explore flight strategies and steering control laws for collective motion in other species (starling flocks, fish schools).
+</p>
+
+<div>
+    <table width="100%">
+        <td valign="top" align="center" width="50%">
+        <iframe width="470" height="360" src="http://www.youtube.com/embed/lDsvlkttL7k?rel=0&loop=1&&playlist=lDsvlkttL7k&autoplay=1" frameborder="0" allowfullscreen></iframe>
+        </td>
+        <td valign="top" align="center" width="50%">
+        <iframe width="470" height="360" src="http://www.youtube.com/embed/BCxUbQhIV1g?rel=0&loop=1&&playlist=BCxUbQhIV1g&autoplay=1" frameborder="0" allowfullscreen></iframe>
+        </td>
+    </table>
+</div>
+
+<p>
+In an ongoing collaboration with <a href="http://www.sapienza.isc.cnr.it/biological-systems/flocking/244-collective-behaviour-in-biological-systems-cobbs-group.html" target="_blank">COBBS Group</a> at the Institute for Complex Systems (ISC-CNR) we are trying to understand the mechanism governing the spectacular aerial displays by flocks of european starlings (<i>Sturnus vulgaris</i>). By assuming individual starlings as point particles we are working towards developing a theoretical model for flocking. Trajectory data analysis has revealed that the individuals fly parallel to each other and the flock-averaged coherence (the average <i>cosine</i> of the angle between the velocities of a focal bird and its neighborhood center of mass, averaged over the entire flock) gets maximized by considering <i>5-7 nearest neighbors</i>.
+</p>
+
+<u>Related Publications</u>:<br />
+<ul>
+<li><p> 
+B. Dey, P. V. Reddy, C. Chiu, K. Ghose, K. S. Galloway, T. K. Horiuchi, E. W. Justh, P. S. Krishnaprasad, C. F. Moss, 
+<i><font color="blue">Context shapes bat flight behavior: Evidence from geometry of prey capture</font></i>, 
+Under Preparation.
+</p></li>
+</ul>
+
+</div>
+
+
+
+
+
+<h2>
+<a style="cursor:pointer;" onclick="return toggleMe('paraR4')">
+Feedback-Controlled Bifurcation in Evolutionary Dynamics
+</a>
+</h2>
+<div id="paraR4" style="display:none;">
+
+<div>
+    <table>
+        <td valign="top" align="justify" width="100%">
+        <p>
+        <img src="Figure_4.png" width="450" height="350" align="right">
+        Evolutionary dynamics provides a set of powerful tools to model and analyze how the fractions of a population committed to different strategies evolve over time (e.g. evolution of language grammars, population genetics in biology etc.). In particular, the replicator-mutator dynamics model this evolution as a function of replication (commitment to strategies with higher rewards/pay-offs) and mutation (tendency for spontaneous switch among strategies). Depending on the rate of mutation and strategy interaction network, steady-state system-level behavior can be classified into three types: (i) dominance of a single strategy, (ii) coexistence of a few strategies, and (iii) collapse of dominance. High mutation rate leads to collapse of dominance, i.e., the mixed equilibrium of equal representation of strategies, whereas low mutation rate results in a single dominant strategy. However, whether the population fractions themselves exert any influence on tuning the rate of mutation is yet to be explored.
+        </p>
+
+        <p>
+		While collaborating with the Dance Program at Princeton University on understanding the process of social decision-making in a structured improvisational dance context, we noticed some evidence of population fractions' influence on the switching rates between strategies. This motivated us to introduce a feedback loop  into the well-studied framework of replicator-mutator dynamics. Then, by carrying out a feedback controlled bifurcation analysis, we have demonstrated that this modification can yield persistence of dominant strategies (as observed in the data). Furthermore, by introducing nonlinearities into the underlying pay-off structure, we have shown that our proposed framework can emulate oscillatory behavior even when only two strategies are interacting with each other.
+		</p>
+
+	    </td>
+    </table>
+</div>
+
+<u>Related Publications</u>:<br />
+<ul>
+<li><p> 
+K. &Oumlzcimder, B. Dey, R. J. Lazier, D. Trueman, N. E. Leonard, 
+<i><font color="blue">Investigating group behavior in dance: An evolutionary dynamics approach</font></i>, 
+ACC 2016.
+</p></li>
+<li><p> 
+B. Dey, A. Franci, K. &Oumlzcimder, N. E. Leonard, 
+<i><font color="blue">Feedback Controlled Bifurcation of Evolutionary Dynamics with Generalized Fitness</font></i>, 
+Accepted for <i>ACC 2018</i>.
+</p></li>
+<li><p> 
+K. &Oumlzcimder, B. Dey, A. Franci, R. J. Lazier, D. Trueman, N. E. Leonard, 
+<i><font color="blue">Social decision-making driven by artistic explore-exploit tension</font></i>, 
+Under Preparation.
+</p></li>
+</ul>
+
+</div>
+
+
+
+
+
+<h2>
+<a style="cursor:pointer;" onclick="return toggleMe('paraR5')">
+Control Theoretic Data Smoothing
+</a>
+</h2>
+<div id="paraR5" style="display:none;">
+
+<p>
+Exploration and development of models for collective behavior in biological setting rely heavily on data analysis, which in turn involves smoothing and reconstruction of a continuous time signal from discrete, noisy observations. However, many such, possibly non-denumerable, reconstructions may be consistent with the discrete measurements. In this sense, this inverse problem is ill-posed, and we tackle it by the method of regularization. By introducing generative models with inputs, states and outputs, we regularize this problem by trading total fit-error against suitable penalty functionals of input and state. Our framework also optimizes the trade-off between goodness of fit and smoothness of reconstruction by adopting a cross-validation approach.
+</p>
+
+<div>
+    <table>
+        <td valign="top" align="justify" width="100%">
+        <img src="F1_1.jpg" width="350" height="250" align="left">
+        For example, in order to investigate the feedback mechanisms underlying collective motion  in natural settings (e.g. self-organized aerial displays by starling flocks, pursuit events in echolocating bats etc.), we are required to extract velocity and its higher order derivatives from a finite sample of observed positions. We introduced a simple linear triple-integrator as the underlying generative model for trajectories. Then, by penalizing high values of the jerk (i.e. the derivative of acceleration) path integral, we constructed an explicit solution using techniques from linear quadratic optimal control. The resulting smoothing algorithm is fast, with complexity of the order of sample size. Our subsequent work considers a more general nonlinear generative model, and yields solution in a semi-analytical way by using a modified version of Pontryagin's maximum principle. Then by extending our results to problems with generative models on finite dimensional matrix Lie groups, we have shown that analytical solutions can be obtained in terms of Jacobi elliptic functions for data smoothing problems on <i>SE(2)</i>. Although our usage of these control theoretic data smoothing techniques have been limited to trajectory reconstruction, these algorithms can be used to recover continuous time signals from a set of discrete measurements in other areas of science and engineering as well. Furthermore, this framework can also be exploited to address way-point tracking problems - if the objective is to optimize some relevant path cost, by sacrificing exactness in its way-point traversal, that problem can easily be addressed in this framework.
+        </td>
+    </table>
+</div>
+
+<u>Related Publications</u>:<br />
+<ul>
+<li><p> 
+B. Dey, P. S. Krishnaprasad, <i><font color="blue">Trajectory smoothing as a linear optimal control problem</font></i>, 
+Allerton 2012. 
+</p></li>
+<li><p> 
+B. Dey, P. S. Krishnaprasad, <i><font color="blue">Control-theoretic data smoothing</font></i>,
+CDC 2014. 
+</p></li>
+<li><p> 
+B. Dey, P. S. Krishnaprasad, <i><font color="blue">Trajectory reconstruction via optimal control</font></i>, 
+Under Preparation. 
+</p></li>
+</ul>
+
+<u>Matlab Codes</u>:<br />
+<a href="Traj_ReCoN_jerk_min.zip">Click here</a> to download the zip file of MATLAB codes (MAIN_code_4_Reconstruction.m + 
+Ord_Crss_Validation.m + Linear_Filter.m and README file). These codes implement the reconstruction algorithm proposed in our paper 
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6483395&tag=1" target="_blank"><i>Trajectory Smoothing as 
+a Linear Optimal Control Problem</i></a>. Moreover these codes are customized to leverage the parallelism of ordinary 
+cross validation.
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>   
+  <footer id="footer" class="fluid"></footer>
+</div>
+</div>
+</body>
+</html>
