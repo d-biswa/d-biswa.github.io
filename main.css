@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	33;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+@media only screen and (max-width: 481px) {  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
+	clear: none;
+	float: none;
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: block;
+}
+#sidebar {
+width: 100%;
+}
+#maincontent {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+#photo {
+width: 100%;
+margin-left: 0;
+}
+#name {
+width: 100%;
+margin-left: 0;
+}
+#menu {
+width: 100%;
+margin-left: 0;
+}
+#profileimage {
+margin-left: 0;
+width: 100%;
+clear: both;
+display: none;
+}
+#articlebio {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+#subcontents {
+margin-left: 0;
+width: 100%;
+}
+#footer {
+margin-left: 0;
+width: 100%;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
+	clear: none;
+	float: none;
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: block;
+}
+#sidebar {
+width: 100%;
+}
+#maincontent {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+#photo {
+width: 100%;
+margin-left: 0;
+}
+#name {
+width: 100%;
+margin-left: 0;
+}
+#menu {
+margin-left: 0;
+width: 99.999%;
+}
+#profileimage {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+#articlebio {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+#subcontents {
+margin-left: 0;
+width: 100%;
+}
+#footer {
+width: 100%;
+margin-left: 0;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
+	clear: none;
+	float: none;
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: block;
+}
+#sidebar {
+	width: 15.999%;
+	height: 100%;
+	margin: 0px;
+	float: left;
+	clear: both;
+	position: fixed;
+	overflow-y:hidden;
+}
+#maincontent {
+	width: 78.888%;
+	clear: none;
+	margin-left: 1.111%;
+	margin-right: 0px;
+	padding-left: 1%;
+	padding-right: 3%;
+	height: auto;
+	float: right;
+}
+#photo {
+width: 63.6612%;
+margin-left: 0;
+}
+#name {
+margin-left: 0;
+width: 63.6612%;
+}
+#menu {
+margin-left: 0;
+}
+#profileimage {
+	width: 27%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-left: 5.5%;
+	padding-right: 0.7%;
+	clear: both;
+	float: left;
+	padding-top: 7%;
+	height: auto;
+	padding-bottom: 1%;
+	display: inline;
+}
+#articlebio {
+	width: 57.299%;
+	clear: none;
+	padding-right: 7%;
+	padding-left: 1.5%;
+	float: right;
+	padding-top: 4%;
+	display: inline-block;
+	margin-left: 1%;
+	padding-bottom: 1%;
+	height: auto;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#subcontents {
+	margin-left: 0px;
+	width: 94.999%;
+	padding-left: 1%;
+	padding-right: 4%;
+	height: auto;
+}
+#footer {
+margin-left: 0;
+width: 100%;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
