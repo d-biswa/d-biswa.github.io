@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+#sidebar {
+	text-align: left;
+	vertical-align: top;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #100702;
+	margin: 0%;
+	bottom: 2em;
+	overflow-y: hidden;
+	transition: filter 500ms;
+	-webkit-transition: -webkit-filter 500ms;
+	-moz-transition: -moz-filter 500ms;
+	-ms-transition: -ms-filter 500ms;
+	-o-transition: -o-filter 500ms;
+	display: block;
+	left: 0%;
+	top: 0%;
+	height: 100%;
+}
+#maincontent {
+	background: #FEFEFE;
+	display: block;	
+	height: auto;
+	float: right;
+    right: 0;
+	top: 0;
+	bottom: 0;
+	position: relative;
+}
+#photo {
+	background-color: #100702;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0.1%;
+	text-align: center;
+	padding-top: 2.8em;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin: 0 auto;
+	height: auto;
+	border-radius: 40%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	float: none;
+	position:relative;
+}
+#name {
+	background-color: #100702;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 1.2em;
+	width: 97.99%;
+	height: auto;
+}
+#menu {
+	background-color: #100702;
+	width: 99.999%;
+	position: relative;
+	padding-bottom: 3em;
+	bottom: 0;
+	height: 100%;
+	z-index: 0;
+	overflow-y: hidden;
+}	
+#profileimage {
+	background-color:#fefefe;
+}
+#articlebio {
+	background-color:#fefefe;
+}
+#subcontents {
+	background-color: #fefefe;
+	margin-top: 1%;
+	list-style-position: inside;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	clear: both;
+	display: inline-block;
+	position: relative;
+	z-index: 0;
+	overflow: auto;
+}
+#footer {
+	width: 100%;
+	height: auto;
+	background-color: #FEFEFE;
+	font-size: small;
+	border-top: 0.1em solid #FEFEFE;
+	padding-top: 1em;
+	color: #000000;
+	padding-bottom: 1em;
+}
+#name h2 {
+	font-size: 170%;
+	font-weight: 300;
+	color: #fefefe;
+	margin-top: 0.2em;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0.1em;
+	border-bottom: none;
+	padding-top: 0.1em;
+	position: relative;
+	padding-bottom: 0.1em;
+}
+
+#name h3 {
+	font-size: 110%;
+	font-weight: 300;
+	color: #FEFEFE;
+	margin: 0em 0 0.1em 0;
+	position: realitve;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+#img {
+	display: block;
+    height: auto;
+    position: relative;
+}
