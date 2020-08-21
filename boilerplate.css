@@ -57,10 +57,10 @@ a:link {
 	color: #453E3E;
 }
 a:visited {
-	color: #A21E06;
+	color: #024786;
 }
 a:hover {
-	color: #F57506;
+	color: #1cb3a6;
 }
 
 /* ======================== Typography, Editable ======================= */
@@ -71,21 +71,21 @@ h1,h2,h3,h4,h5,h6{
 }
 h1 {
 	font-size: 180%;
-	color: #C82601;
+	color: #1b5dd6;
 	padding-left: 0.0em;
 	border-bottom: 1px solid #1D1C1C;
 }
 h2 {
 	padding-top: 0.0em;
 	font-size: 150%;
-	color: #C82601;
+	color: #1b5dd6;
 	border-bottom: 1px solid #1D1C1C;
 }
 h3 {
 	font-size: 130%;
 	margin-top: 0.0em;
 	margin-bottom: 0.0em;
-    color: #B8860B;
+    color: #1b5dd6;
 	border-bottom: none;
 }
 p {
@@ -196,7 +196,7 @@ ul#nav li a {
 	font-size: 105%;
 }
 ul#nav li:hover,ul#nav li:focus {
-	background: #f07227;
+	background: #87a5dd;
 	width: auto;
 }
 ul#nav li:hover a,ul#nav li:focus a {

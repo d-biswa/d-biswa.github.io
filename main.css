@@ -214,27 +214,27 @@ width: 63.6612%;
 margin-left: 0;
 }
 #profileimage {
-	width: 27%;
+	width: 28%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	padding-left: 5.5%;
-	padding-right: 0.7%;
+	padding-left: 1%;
+	padding-right: 1%;
 	clear: both;
 	float: left;
-	padding-top: 7%;
+	padding-top: 3%;
 	height: auto;
 	padding-bottom: 1%;
 	display: inline;
 }
 #articlebio {
-	width: 57.299%;
+	width: 65%;
 	clear: none;
-	padding-right: 7%;
-	padding-left: 1.5%;
+	padding-right: 1%;
+	padding-left: 3%;
 	float: right;
-	padding-top: 4%;
+	padding-top: 2%;
 	display: inline-block;
 	margin-left: 1%;
 	padding-bottom: 1%;
