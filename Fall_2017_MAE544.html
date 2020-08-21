@@ -1,0 +1,405 @@
+<!doctype html>
+<html class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAE-544</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="commonstyle.css" rel="stylesheet" type="text/css">
+<script src="respond.min.js"></script>
+<script type="text/javascript">
+function toggleMe(a){
+var e=document.getElementById(a);
+var i = document.getElementById(a + '_image');
+if(!e)return true;
+if(e.style.display=="none"){
+e.style.display="block"
+i.src = 'http://laimages.s3.amazonaws.com/data/imagemanager/382/Arrow-Down-GreenShade30.png';
+} else {
+e.style.display="none"
+i.src = 'http://laimages.s3.amazonaws.com/data/imagemanager/382/Arrow-Right-GreenShade30.png';
+}
+return false;
+}
+</script>
+</head>
+
+
+
+<body>
+	<div class="gridContainer clearfix">
+        <aside id="sidebar" class="fluid">
+              
+               <div id="name" class="fluid clearfix">
+                    <h2></h2>
+               </div>
+
+               <div id="menu" class="fluid">
+                   <ul id="nav">
+                    <li><a href="index.html"><div class="text">Home</div></a></li> 
+                    <li><a href="Fall_2017_MAE544.html"><div class="text"><b><font color="white">MAE 544</font></b></div></a></li>
+                  </ul>
+               </div>      
+        </aside>
+        <div id="maincontent" class="fluid">
+        <div id="subcontents" class="fluid">
+
+
+
+
+<h1><font color="#1E90FF"><b>MAE 544: Nonlinear Control</b></font></h1>
+
+<font size="4">
+<b>Lectures</b>: <br /> 
+&nbsp &nbsp &nbsp Tuesday/Thursday (3:00pm - 4:20pm) <br />
+&nbsp &nbsp &nbsp  Wallace Hall 006 <br />
+
+<b>Instructor</b>: <br />
+&nbsp &nbsp &nbsp Biswadip Dey <br />
+&nbsp &nbsp &nbsp Von Neumann Hall, Room H-116 <br />
+&nbsp &nbsp &nbsp biswadip@princeton.edu <br />
+
+<b>Office Hours</b>: <br /> 
+&nbsp &nbsp &nbsp Wednesday (5:00pm - 6:30pm) <br />
+
+<b>Grading Policy</b>: <br />
+&nbsp &nbsp &nbsp 25% - Bi-weekly Assignments (5 assignments) <br />
+&nbsp &nbsp &nbsp 50% - Midterms (2 take-home exams) <br />
+&nbsp &nbsp &nbsp 25% - Course Project (Deliverables will consist of a final report and an oral presentation) <br />
+
+</font><br />
+
+<font size="5" color="#6495ED"><b>Core Topics</b></font>  <br />
+<font size="4">
+
+&nbsp &nbsp &nbsp &#x25B8
+Brief overview of relevant topics from linear algebra and advanced calculus
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+Introduction to differential geometry - smooth manifolds and tangent/cotangent spaces, vector fields
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+Lie groups and related concepts
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+Lie bracket of vector fields
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+Controllability properties of nonlinear systems
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+Lyapunov stability theory and local stabilization
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8 
+Passivity and stabilization of dissipative systems
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+Energy shaping and controlled Lagrangian
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8 
+Feedback linearization
+<br />
+
+
+</font><br />
+
+<font size="5" color="#6495ED"><b>Lecture Notes and Reading Material</b></font>  <br />
+<font size="4">
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Lecture 1-2:</b> Background and A Brief Review of Linear Algebra and Calculus
+<br />
+
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>September 14</i>: <a href="Teaching/MAE544_F17_Lec_01.pdf" target="_blank"><font color="blue">Lecture Note - 1</font></a> 
+(Basic Introduction; Examples of Nonlinear Systems)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Material</i>: 
+<a href="Teaching/RM01_Grizzle_Westervelt_HZD_Biped.pdf" target="_blank"><font color="blue">Paper-1</font></a>,
+<a href="Teaching/RM02_Koon_et_al_SpaceMission.pdf" target="_blank"><font color="blue">Paper-2</font></a>,
+<a href="Teaching/RM03_Mabuchi_Khaneja_Quantum.pdf" target="_blank"><font color="blue">Paper-3</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>September 19</i>: <a href="Teaching/MAE544_F17_Lec_02.pdf" target="_blank"><font color="blue">Lecture Note - 2</font></a> 
+(Group, Ring, Field; Vector Space; Normed and Inner-Product Space)
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Lecture 3-8:</b> Introduction to Differential Geometry
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>September 21</i>: <a href="Teaching/MAE544_F17_Lec_03.pdf" target="_blank"><font color="blue">Lecture Note - 3</font></a> 
+(Dynamics on Non-Euclidean Space - Rigid Body Dynamics)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>September 26</i>: <a href="Teaching/MAE544_F17_Lec_04.pdf" target="_blank"><font color="blue">Lecture Note - 4</font></a> 
+(Manifolds; Charts and Atlases)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>September 28</i>: <a href="Teaching/MAE544_F17_Lec_05.pdf" target="_blank"><font color="blue">Lecture Note - 5</font></a> 
+(Charts and Atlases Contd.; Smooth Structures; Smooth Functions)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>October 05</i>: <a href="Teaching/MAE544_F17_Lec_06.pdf" target="_blank"><font color="blue">Lecture Note - 6</font></a> 
+(Tangent Vectors - Tangents to Smooth Curves, Derivation)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>October 10</i>: <a href="Teaching/MAE544_F17_Lec_07.pdf" target="_blank"><font color="blue">Lecture Note - 7</font></a> 
+(Tangent Space; Derivative of Smooth Functions; Tangent Bundle)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>October 12</i>: <a href="Teaching/MAE544_F17_Lec_08.pdf" target="_blank"><font color="blue">Lecture Note - 8</font></a> 
+(Vector Field; Cotangent Space; Cotangent Bundle; Differential 1-Form)
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Lecture 9-11:</b> Control Systems as Vector Fields
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>October 17</i>: <a href="Teaching/MAE544_F17_Lec_09.pdf" target="_blank"><font color="blue">Lecture Note - 9</font></a> 
+(Vector Fields as Derivations; Affine Control Systems; Intro. to Lie-Bracket)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Material</i>: 
+<a href="Teaching/RM04_Eqv-CL-and-CH-Systems.pdf" target="_blank"><font color="blue">Paper-4</font></a>,
+<a href="Teaching/RM05_Equilibria-and-steering-laws-planar-formation.pdf" target="_blank"><font color="blue">Paper-5</font></a>,
+<a href="Teaching/RM06_SK_RNB__Purcells-Swimmer.pdf" target="_blank"><font color="blue">Paper-6</font></a>,
+<a href="Teaching/RM07_Asymptotic-stabilization-by-CbI.pdf" target="_blank"><font color="blue">Paper-7</font></a>,
+<a href="Teaching/RM08_Geom-Nonlinear-Optimal-Control.pdf" target="_blank"><font color="blue">Paper-8</font></a>,
+<a href="Teaching/RM09_Controlled-Lagrangian-I.pdf" target="_blank"><font color="blue">Paper-9</font></a>,
+<a href="Teaching/RM10_Controlled-Lagrangian-II.pdf" target="_blank"><font color="blue">Paper-10</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>October 19</i>: <a href="Teaching/MAE544_F17_Lec_10.pdf" target="_blank"><font color="blue">Lecture Note - 10</font></a> 
+(Lie-Bracket of Vector Fields; Lie-Algebra)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Material</i>: 
+<a href="Teaching/RM11_Brockett--NL-Sys_Diff-Geo.pdf" target="_blank"><font color="blue">Paper-11</font></a>,
+<a href="Teaching/RM12_Brockett--Early_Geom_NL_Control.pdf" target="_blank"><font color="blue">Paper-12</font></a>,
+<a href="Teaching/RM13_Brockett--Control-on-Spheres.pdf" target="_blank"><font color="blue">Paper-13</font></a>,
+<a href="Teaching/RM14_SnakeBoard_Lewi-Murray.pdf" target="_blank"><font color="blue">Paper-14</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>October 24</i>: <a href="Teaching/MAE544_F17_Lec_11.pdf" target="_blank"><font color="blue">Lecture Note - 11</font></a> 
+(Lie-Group; Left-Invariant Vector Fields; Integral Curves)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Material</i>: 
+<a href="Teaching/RM15_Wei-Norman.pdf" target="_blank"><font color="blue">Paper-15</font></a>,
+<a href="Teaching/RM16_NEL-PSK.pdf" target="_blank"><font color="blue">Paper-16</font></a>,
+<a href="Teaching/RM17_Murray-Sastry-Motion-Sinusoid.pdf" target="_blank"><font color="blue">Paper-17</font></a>
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Lecture 12-14:</b> Nonlinear Controllability
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>October 25</i>: <a href="Teaching/MAE544_F17_Lec_12.pdf" target="_blank"><font color="blue">Lecture Note - 12</font></a> 
+(Exponential Map; Distribution; Frobenius Theorem; Intro. to Controllability)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 8</i> of "Nonlinear Systems: Analysis, Stability, and Control" (Ref.#3)</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>October 26</i>: <a href="Teaching/MAE544_F17_Lec_13.pdf" target="_blank"><font color="blue">Lecture Note - 13</font></a> 
+(Accessibility, Controllability and STLC; Lie-Algebraic Rank Condn.)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>November 07</i>: <a href="Teaching/MAE544_F17_Lec_14.pdf" target="_blank"><font color="blue">Lecture Note - 14</font></a> 
+(Stronger Form of Accessibility; More results on Controllability; Examples)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 3.1</i> of "Nonlinear Dynamical Control Systems" (Ref.#1)</font>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<a href="Teaching/RAssign_NL_Cont__ALewis.pdf" target="_blank"><font color="blue">Notes on Nonlinear Controllability: Andrew D. Lewis</font></a>
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Lecture 15-16:</b> Stabilization using Lyapunov Stability Theory
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>November 09</i>: <a href="Teaching/MAE544_F17_Lec_15.pdf" target="_blank"><font color="blue">Lecture Note - 15</font></a> 
+(Stability in the Sense of Lyapunov; Lyapunov’s Direct Method)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 5.1-5.3</i> of "Nonlinear Systems: Analysis, Stability, and Control" (Ref.#3)</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Material</i>: 
+<a href="Teaching/RM18_Sussmann_GenTheoCont.pdf" target="_blank"><font color="blue">Paper-18</font></a>,
+<a href="Teaching/RM19_Sussmann-Jurdjevic_ContNL.pdf" target="_blank"><font color="blue">Paper-19</font></a>,
+<a href="Teaching/RM20_JB_ContObsvPoly.pdf" target="_blank"><font color="blue">Paper-20</font></a>,
+<a href="Teaching/RM21_JrShinLi_EnsembleControl.pdf" target="_blank"><font color="blue">Paper-21</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>November 14</i>: <a href="Teaching/MAE544_F17_Lec_16.pdf" target="_blank"><font color="blue">Lecture Note - 16</font></a> 
+(Lyapunov’s Indirect Method; Feedback Stabilization; Domain of Attraction)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 5.7-5.9</i> of "Nonlinear Systems: Analysis, Stability, and Control" (Ref.#3)</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 6.1</i> of "Nonlinear Systems: Analysis, Stability, and Control" (Ref.#3)</font></a>
+<br />
+
+
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Lecture 17-18:</b> Passivity and Dissipative System
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>November 16</i>: <a href="Teaching/MAE544_F17_Lec_17.pdf" target="_blank"><font color="blue">Lecture Note - 17</font></a> 
+(<i>L-p</i> Spaces; Input-output Stability; Small Gain Theorem)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 4.2-4.3</i> of "Nonlinear Systems: Analysis, Stability, and Control" (Ref.#3)</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>November 21</i>: <a href="Teaching/MAE544_F17_Lec_18.pdf" target="_blank"><font color="blue">Lecture Note - 18</font></a> 
+(Passivity and Dissipation Inequality; Input-to-State Stability (ISS))
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 4.4</i> of "Nonlinear Systems: Analysis, Stability, and Control" (Ref.#3)</font></a>
+<br />
+
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Lecture 19-21:</b> Control Lyapunov and Energy Shaping Methods
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>November 28</i>: <a href="Teaching/MAE544_F17_Lec_19.pdf" target="_blank"><font color="blue">Lecture Note - 19</font></a> 
+(Control Lyapunov Function (CLF); Backstepping)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 6.8</i> of "Nonlinear Systems: Analysis, Stability, and Control" (Ref.#3)</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Material</i>: 
+<a href="Teaching/RM22_CLF_SonTag_Result.pdf" target="_blank"><font color="blue">Paper-22</font></a>,
+<a href="Teaching/RM23_Tlkt_NL_FeedBack.pdf" target="_blank"><font color="blue">Paper-23</font></a>,
+<a href="Teaching/RM24_Trnsfm_2_Strct_FB.pdf" target="_blank"><font color="blue">Paper-24</font></a>
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>November 29</i>: <a href="Teaching/MAE544_F17_Lec_20.pdf" target="_blank"><font color="blue">Lecture Note - 20</font></a> 
+(Passivity Based Control; Intro. to Controlled Lagrangian)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>November 30</i>: <a href="Teaching/MAE544_F17_Lec_21.pdf" target="_blank"><font color="blue">Lecture Note - 21</font></a> 
+(Controlled Lagrangian; Intro. to Feedback Linearization)
+<br />
+
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Lecture 22-24:</b> State and Output Feedback Linearization
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>December 5</i>: <a href="Teaching/MAE544_F17_Lec_22.pdf" target="_blank"><font color="blue">Lecture Note - 22</font></a> 
+(Feedback Linearization for SISO Systems; Normal Form)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>December 6</i>: <a href="Teaching/MAE544_F17_Lec_23.pdf" target="_blank"><font color="blue">Lecture Note - 23</font></a> 
+(State-Space Exact Linearization; Zero Dynamics)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#x25AA
+<i>December 7</i>: <a href="Teaching/MAE544_F17_Lec_24.pdf" target="_blank"><font color="blue">Lecture Note - 24</font></a> 
+(Zero Dynamics; Tracking and Stabilization)
+<br />
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<i>Reading Assignment</i>: 
+<font color="blue"><i>Chapter 9</i> of "Nonlinear Systems: Analysis, Stability, and Control" (Ref.#3)</font></a>
+<br />
+
+
+</font><br />
+
+
+<font size="5" color="#6495ED"><b>Homework Problem Sets</b></font>  <br />
+<font size="4">
+
+&nbsp &nbsp &nbsp &#x25B8
+<b>Homework 1:</b> 
+<a href="Teaching/HW_1_PSet.pdf" target="_blank"><font color="blue">Problem Set # 1</font></a>
+(Due: 10/05/2017)
+<br />
+&nbsp &nbsp &nbsp &#x25B8
+<b>Homework 2:</b> 
+<a href="Teaching/HW_2_PSet.pdf" target="_blank"><font color="blue">Problem Set # 2</font></a>
+(Due: 10/24/2017)
+<br />
+&nbsp &nbsp &nbsp &#x25B8
+<b>Homework 3:</b> 
+<a href="Teaching/HW_3_PSet.pdf" target="_blank"><font color="blue">Problem Set # 3</font></a>
+(Due: 11/09/2017)
+<br />
+&nbsp &nbsp &nbsp &#x25B8
+<b>Homework 4:</b> 
+<a href="Teaching/HW_4_PSet.pdf" target="_blank"><font color="blue">Problem Set # 4</font></a>
+(Due: 12/07/2017)
+<br />
+&nbsp &nbsp &nbsp &#x25B8
+<b>Homework 5:</b> 
+<a href="Teaching/HW_5_PSet.pdf" target="_blank"><font color="blue">Problem Set # 5</font></a>
+(Due: 12/14/2017)
+<br />
+
+
+</font><br />
+
+
+<font size="5" color="#6495ED"><b>References</b></font>  <br />
+<font size="4">
+
+&nbsp &nbsp &nbsp &#x25B8 (1)
+Nijmeijer, H., van der Schaft, A. (1990) <i>Nonlinear Dynamical Control Systems</i>, Springer New York.
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8 (2)
+Isidori, A. (1995) <i>Nonlinear Control Systems</i>, Springer-Verlag London.
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8 (3)
+Sastry, S. S. (1999) <i>Nonlinear Systems: Analysis, Stability, and Control</i>, Springer-Verlag New York.
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8 (4)
+Schutz, B. F.(1980) <i>Geometrical Methods of Mathematical Physics</i>, Cambridge University Press.
+<br />
+
+&nbsp &nbsp &nbsp &#x25B8 (5)
+Guillemin, V., Pollack, A. (Reprint, 2010) <i>Differential Topology</i>, American Mathematical Society.
+<br />
+
+
+</font>
+
+
+
+
+</div>         
+  <footer id="footer" class="fluid"></footer>
+</div>
+
+</div>
+</body>
+</html>
