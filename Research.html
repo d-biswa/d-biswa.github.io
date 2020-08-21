@@ -44,7 +44,7 @@ return false;
                     <li><a href="Presentations.html"><div class="text">Presentations</div></a></li>
                     <li><a href="Experience.html"><div class="text">Experience</div></a></li>
                     <li><a href="Resume.pdf" target="_blank"><div class="text">C.V.</div></a></li>  
-                    <li><a href="Fall_2017_MAE544.html"><div class="text">Course: <b><font color="white">MAE 544</font></b></div></a></li>
+                    <li><a href="Fall_2017_MAE544.html"><div class="text"><i>Nonlinear Control</i></div></a></li>
                   </ul>
                </div>      
         </aside>
@@ -59,6 +59,20 @@ return false;
 
 
 
+<h2>
+<a style="cursor:pointer;" onclick="return toggleMe('paraRa')">
+Physics-informed Machine Learning
+</a>
+</h2>
+<div id="paraRa" style="display:none;">
+
+<p>
+In a variety of settings, especially in physical systems, wherein laws of physics are primarily responsible for shaping 
+the outcome, generalization in neural networks can be improved by leveraging underlying physics for designing the 
+computation graphs. Our work on this topic leverages a generalization of the Hamiltonian dynamics to develop a learning 
+framework that uncover continuous dynamics from discrete observations in a data-effcient and transparent manner.
+</p>
+</div>
 
 <h2>
 <a style="cursor:pointer;" onclick="return toggleMe('paraR1')">
@@ -117,7 +131,7 @@ Another related line of my research (in collaboration with <a href="https://www.
 <p>
 Many practical problems demand intelligent control algorithms to drive a group of autonomous robots towards some region of interest, and upon arrival switch to a suitable pattern for collaborative task execution, for example, search and rescue, surveillance, precision agriculture. Our results for synthesizing collective motion have direct relevance and potential applications in these situations, and may also provide some insight into modeling <i>explore-exploit</i> trade-offs observed in the foraging behavior of animal collectives.
 </p>
-
+<!--
 <u>Related Publications</u>:<br />
 <ul>
 <li><p> 
@@ -139,7 +153,7 @@ K. S. Galloway, B. Dey, <i><font color="blue">Collective motion under beacon-ref
 K. S. Galloway, B. Dey, <i><font color="blue">Beacon-referenced Mutual Pursuit in Three Dimensions</font></i>, Accepted for <i>ACC 2018</i>. 
 </p></li>
 </ul>
-
+-->
 </div>
 
 
@@ -167,7 +181,7 @@ Investigation of synchronization phenomena in networks of coupled nonlinear osci
     </td>
     </table>
 </div>
-
+<!--
 <u>Related Publications</u>:<br />
 <ul>
 <li><p>
@@ -180,7 +194,7 @@ Z. Aminzare, B. Dey, E. N. Davison, N. E. Leonard, <i><font color="blue">Cluster
 E. N. Davison, Z. Aminzare, B. Dey, N. E. Leonard, <i><font color="blue">Mixed mode oscillations and firing onset in coupled systems of FitzHugh-Nagumo type</font></i>, Under Preparation. 
 </p></li>
 </ul>
-
+-->
 </div>
 
 
@@ -203,7 +217,7 @@ Human Inspired Design of Neural Network Architectures
         </td>
     </table>
 </div>
-
+<!--
 <u>Related Publications</u>:<br />
 <ul>
 <li><p> 
@@ -235,7 +249,7 @@ K. &Oumlzcimder, B. Dey, S. Musslick, Z. Aminzare, T. L. Willke, J. D. Cohen, <i
 Under Preparation. 
 </p></li>
 </ul>
-
+-->
 </div>
 
 
@@ -272,7 +286,7 @@ Equipped with appropriate algorithms for data smoothing and trajectory reconstru
 <p>
 In an ongoing collaboration with <a href="http://www.sapienza.isc.cnr.it/biological-systems/flocking/244-collective-behaviour-in-biological-systems-cobbs-group.html" target="_blank">COBBS Group</a> at the Institute for Complex Systems (ISC-CNR) we are trying to understand the mechanism governing the spectacular aerial displays by flocks of european starlings (<i>Sturnus vulgaris</i>). By assuming individual starlings as point particles we are working towards developing a theoretical model for flocking. Trajectory data analysis has revealed that the individuals fly parallel to each other and the flock-averaged coherence (the average <i>cosine</i> of the angle between the velocities of a focal bird and its neighborhood center of mass, averaged over the entire flock) gets maximized by considering <i>5-7 nearest neighbors</i>.
 </p>
-
+<!--
 <u>Related Publications</u>:<br />
 <ul>
 <li><p> 
@@ -281,7 +295,7 @@ B. Dey, P. V. Reddy, C. Chiu, K. Ghose, K. S. Galloway, T. K. Horiuchi, E. W. Ju
 Under Preparation.
 </p></li>
 </ul>
-
+-->
 </div>
 
 
@@ -310,7 +324,7 @@ Feedback-Controlled Bifurcation in Evolutionary Dynamics
 	    </td>
     </table>
 </div>
-
+<!--
 <u>Related Publications</u>:<br />
 <ul>
 <li><p> 
@@ -329,7 +343,7 @@ K. &Oumlzcimder, B. Dey, A. Franci, R. J. Lazier, D. Trueman, N. E. Leonard,
 Under Preparation.
 </p></li>
 </ul>
-
+-->
 </div>
 
 
@@ -355,7 +369,7 @@ Exploration and development of models for collective behavior in biological sett
         </td>
     </table>
 </div>
-
+<!--
 <u>Related Publications</u>:<br />
 <ul>
 <li><p> 
@@ -371,13 +385,15 @@ B. Dey, P. S. Krishnaprasad, <i><font color="blue">Trajectory reconstruction via
 Under Preparation. 
 </p></li>
 </ul>
-
+-->
+<p>
 <u>Matlab Codes</u>:<br />
 <a href="Traj_ReCoN_jerk_min.zip">Click here</a> to download the zip file of MATLAB codes (MAIN_code_4_Reconstruction.m + 
 Ord_Crss_Validation.m + Linear_Filter.m and README file). These codes implement the reconstruction algorithm proposed in our paper 
 <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6483395&tag=1" target="_blank"><i>Trajectory Smoothing as 
 a Linear Optimal Control Problem</i></a>. Moreover these codes are customized to leverage the parallelism of ordinary 
 cross validation.
+</p>
 
 </div>
 
